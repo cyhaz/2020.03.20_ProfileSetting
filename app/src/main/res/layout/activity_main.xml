@@ -125,7 +125,7 @@
                 android:layout_gravity="right|center_vertical"
                 android:text="수정"
                 android:textColor="#808080"
-                android:background="@drawable/gray_button_layout"/>
+                android:background="@drawable/white_border_button"/>
 
         </FrameLayout>
 
