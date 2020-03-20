@@ -40,13 +40,29 @@
         <layer-list>
             <item>
                 <shape
-                    android:shape="oval">
+                    android:shape="rectangle">
 
-                    <solid
-                        android:color="#FF0000"/>
+                    <gradient
+                        android:startColor="#000000"
+                        android:endColor="#888888"/>
 
                 </shape>
             </item>
+
+            <item
+                android:top="1dp"
+                android:bottom="1dp"
+                android:right="1dp"
+                android:left="1dp">
+                <shape
+                    android:shape="rectangle">
+
+                    <solid
+                        android:color="#DFDFDF"/>
+
+                </shape>
+            </item>
+
         </layer-list>
 
     </item>
