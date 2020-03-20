@@ -18,6 +18,7 @@
             android:padding="15dp">
 
             <FrameLayout
+                android:id="@+id/profilePicBtn"
                 android:layout_width="120dp"
                 android:layout_height="120dp">
 
