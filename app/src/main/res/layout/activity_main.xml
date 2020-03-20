@@ -30,15 +30,21 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/camaraimage"
                     android:layout_gravity="right|bottom"/>
-
-
 
             </FrameLayout>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cyhaz@naver.com"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="@drawable/gray_button_layout_circle"/>
 
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -70,7 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="이름을 입력하세요"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             android:background="@drawable/gray_button_layout"/>
 
         <!-- 번호 칸 -->
@@ -91,27 +97,43 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="7dp"
-                android:text="핸드폰번호"
+                android:text="연락처"
                 android:textColor="#000000"
                 android:textSize="20sp"/>
         </LinearLayout>
 
         // 핸드폰번호 입력
-        <EditText
-            android:id="@+id/signUpPhoneNumEdt"
-            android:layout_marginTop="10dp"
-            android:paddingLeft="10dp"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="핸드폰번호를 입력하세요"
-            android:inputType="textEmailAddress"
-            android:background="@drawable/gray_button_layout"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
+            <EditText
+                android:id="@+id/signUpPhoneNumEdt"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="연락처를 입력하세요"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/gray_button_layout"/>
 
+            <Button
+                android:layout_marginRight="10dp"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:text="수정"
+                android:textColor="#808080"
+                android:background="@drawable/gray_button_layout"/>
+
+        </FrameLayout>
+
+<!-- 근무 가능 시간 칸 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_marginTop="30dp"
             android:gravity="center_vertical">
             // 다이아몬드 이미지
             <ImageView
